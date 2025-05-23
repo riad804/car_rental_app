@@ -26,10 +26,10 @@ class _UserApi implements UserApi {
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<ApiResponse<ProfileData>>(
-      Options(method: 'POST', headers: _headers, extra: _extra)
+      Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            '/profile/:id',
+            '/profile/${id}',
             queryParameters: queryParameters,
             data: _data,
           )

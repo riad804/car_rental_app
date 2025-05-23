@@ -87,7 +87,10 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i426.VehicleApi(gh<_i361.Dio>(instanceName: 'Authorized')),
     );
     gh.singleton<_i395.UserRepository>(
-      () => _i292.UserRepositoryImpl(gh<_i530.UserApi>()),
+      () => _i292.UserRepositoryImpl(
+        gh<_i530.UserApi>(),
+        gh<_i569.PrefRepository>(),
+      ),
     );
     gh.singleton<_i515.VehicleRepository>(
       () => _i579.VehicleRepositoryImpl(gh<_i426.VehicleApi>()),

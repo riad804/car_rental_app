@@ -8,9 +8,9 @@ import '../../../data/remote/api/responses/profile_data.dart';
 import '../../repositories/user_repository.dart';
 
 @Singleton()
-class GetProfile extends UseCaseWithParams<ProfileData, String> {
+class GetProfile extends UseCaseWithoutParams<ProfileData> {
   @override
-  ResultFuture<ProfileData> call(String params) {
-    return sl<UserRepository>().getProfile(id: params);
+  ResultFuture<ProfileData> call() {
+    return sl<UserRepository>().getProfile();
   }
 }

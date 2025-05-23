@@ -7,17 +7,17 @@ part 'profile_data.g.dart';
   fieldRename: FieldRename.snake,
 )
 class ProfileData {
-  final int id;
-  final String name;
-  final String email;
+  final int? id;
+  final String? name;
+  final String? email;
   @JsonKey(name: 'total_trips')
-  final int totalTrips;
+  final int? totalTrips;
 
   ProfileData({
-    required this.id,
-    required this.name,
-    required this.email,
-    required this.totalTrips,
+    this.id,
+    this.name,
+    this.email,
+    this.totalTrips,
   });
   factory ProfileData.fromJson(Map<String, dynamic> json) =>
       _$ProfileDataFromJson(json);

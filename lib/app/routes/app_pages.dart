@@ -4,6 +4,8 @@ import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/auth_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/profile/bindings/profile_binding.dart';
+import '../modules/profile/views/profile_view.dart';
 import '../modules/vehicle/bindings/vehicle_binding.dart';
 import '../modules/vehicle/views/vehicle_view.dart';
 
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.VEHICLE,
       page: () => VehicleView(),
       binding: VehicleBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFILE,
+      page: () => const ProfileView(),
+      binding: ProfileBinding(),
     ),
   ];
 }

@@ -36,7 +36,10 @@ class HomeView extends GetView<HomeController> {
             children: [
               GestureDetector(
                 onTap: () {
-                  // Get.toNamed(Routes.PROFILE);
+                  if (scaffoldKey.currentState != null && scaffoldKey.currentState!.isDrawerOpen) {
+                    scaffoldKey.currentState!.closeDrawer();
+                  }
+                  Get.toNamed(Routes.PROFILE);
                 },
                 child: SizedBox(
                   height: 165.h,

@@ -14,6 +14,6 @@ abstract class UserApi {
   @factoryMethod
   factory UserApi(@Named("Authorized") Dio dio) = _UserApi;
 
-  @POST('/profile/:id')
+  @GET('/profile/{id}')
   Future<ApiResponse<ProfileData>> getProfile(@Path("id") String id);
 }
