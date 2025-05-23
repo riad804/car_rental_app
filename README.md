@@ -5,12 +5,9 @@ A modern and feature-rich car rental application built with Flutter, offering a 
 ## Features
 
 - 🚗 Browse available cars with detailed information
-- 📍 Location-based car search
-- 🔍 Advanced filtering and search options
 - 📱 User authentication and profile management
 - 📅 Booking management system
 - 🗺️ Integration with Google Maps
-- 💳 Secure payment processing
 - 📱 Responsive design for all platforms
 
 ## Screenshots
