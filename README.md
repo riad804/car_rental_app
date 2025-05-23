@@ -98,6 +98,16 @@ lib/
 - **UI Components**: Google Fonts, Lottie
 - **Dependency Injection**: GetIt, Injectable
 
+
+## Environment Variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| BASE_URL | api base url | localhost |
+| GOOGLE_API_KEY | google map api key for android | - |
+| GOOGLE_API_KEY_IOS | google map api key for ios | - |
+
+
 ## Contributing
 
 1. Fork the repository
