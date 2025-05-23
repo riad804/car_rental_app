@@ -122,6 +122,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-[Your Name] - [Your Email]
+[Md. Riadul Islam] - [dev.riadul@gmail.com]
 
-Project Link: [https://github.com/yourusername/car_rental_app](https://github.com/yourusername/car_rental_app)
+Project Link: [https://github.com/riad804/car_rental_app](https://github.com/riad804/car_rental_app)
